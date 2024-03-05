@@ -617,7 +617,7 @@ monthsOfTheWeek(month);
 // a.    Object Properties:
 // Write a program to print all the properties of an object.
 function objectfunction(){
-  const objExam=[
+    objExam=[
     {
       name:'Alice Umuhozawase',
       age: 20,
@@ -661,19 +661,15 @@ console.log(objectfunction());
 // b.    Object Values:
 // Create a function that prints all the values of an object.
 function objectFunctiony(a){
-    for (key in a.objExam){
-        console.log(key+": "+objExam[key]);
+    for (i=0;i<a.length;i++)
+{
+    for ( let key in a[i]){
+        console.log(key+": "+a[i][key]+'');
     }
-}
-objectFunctiony(objectfunction);
-// function displayFunction(){
-//   let a=objectfunction.objExam.length;
-//   console.log(a);
-//   for (let i=0;i<a;i++){
-//     console.log(objectfunction.objExam[i])
-//   }
-// }
-// displayFunction();
+    console.log('\n');
+}}
+objectFunctiony(objectfunction());
+
 // c.    Object Key Search:
 // Implement a function that searches for a specific key in an object.
 
