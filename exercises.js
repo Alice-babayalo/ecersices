@@ -697,10 +697,21 @@ objectFunctiony(objectfunction());
 // 68.    Functions Programming:
 // a.    Power Function:
 // Implement a function to calculate the power of a number.
-
+const powerOfNumber=(a,b)=>{ 
+    return Math.pow(a,b);
+}
+console.log(2+" to the power of "+6+" is "+powerOfNumber(2,6))
 // b.    Array Max and Min:
 // Write a function that finds the maximum and minimum values in an array.
+let abc=[1,25,698,664,9,65,913,91,87,92];
+const MAXandMIN=a=>{
+    let mx=a.reduce((a,b)=>Math.max(a,b));
+    let mn=a.reduce((a,b)=>Math.min(a,b));
+    //return mx+'\n'+mn;
+    console.log("The maximum is "+mx+" and the minimum is "+mn);
 
+}
+MAXandMIN(abc);
 // c.    The sum of Digits:
 // Calculate the sum of digits of a given number using a function.
 
