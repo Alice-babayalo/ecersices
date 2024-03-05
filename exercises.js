@@ -712,17 +712,29 @@ const MAXandMIN=a=>{
 
 }
 MAXandMIN(abc);
-// c.    The sum of Digits:
+//////////////////////////////////////////// c.    The sum of Digits:
 // Calculate the sum of digits of a given number using a function.
 
 // d.    GCD (Greatest Common Divisor):
 // Write a function to find the greatest common divisor of two numbers.
+function gcd(a, b) {
+    if (b === 0) {
+        return a;
+    }
+    else {
+        return gcd(b, a % b);
+    }
+}
 
+console.log(gcd(25, 265));
 // e.    Random Number Generator:
 // Create a function that generates a random number within a specified range.
-
- 
-
+const randRange=15000;
+ const randomNumber =a=>{
+   const nh=Math.random()*a;
+   console.log(nh);
+ }  
+randomNumber(randRange);
 // Download JavaScript QuestionsDownload Download JavaScript Questions
 
 
