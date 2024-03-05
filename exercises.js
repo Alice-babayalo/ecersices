@@ -1,6 +1,5 @@
 
 
-
 // JavaScript Practice Questions
 const number1 = 10;
 const number2 =90;
@@ -351,19 +350,7 @@ const countVo=(a)=>{
 let ex='Umuhozawase Alice';
 let exa=ex.toLowerCase();
 console.log("The number of vowels in Umuhozawase is " + countVo(exa));
-// function findVowel(name){
-//   var arrayName= name.split();
-//   var vowel=['a','e','i','u','o','A',"E",'U',"O","I"];
-//   let number=0
-//   for(let i=0; i<arrayName.length;i++){
-//    if(arrayName.includes(vowel)){
-//     number++;
-//   }
-//   }
-//   return number;
-// }
-// const nameV="Umuhozawase";
-// console.log("The number of vowerls in "+nameV+" is "+findVowel(nameV));
+
 // 36.    Write a function that counts the number of consonants in a string.
 const countCons=(a)=>{
   let count=0;
@@ -384,6 +371,10 @@ let exy='Umuhozawase Alice';
 let exay=exy.toLowerCase();
 console.log("The number of vowels in Umuhozawase is " + countCons(exay));
 // 37.    Write a function that finds the index of a given character in a string.
+const stroke="amazone";
+function findIndexx(a){
+
+}
 // 38.    Write a function that removes duplicates from an array.
 // 39.    Write a function that checks if a given value is present in an array.
 // 40.    Write a function that squares each element of an array.
@@ -469,7 +460,8 @@ const daysOfTheWeek=(a)=>{
   }
   
 }
-console.log("According to the number entered, It is  "+daysOfTheWeek(day));
+console.log("According to the number entered, It is  ");
+daysOfTheWeek(day);
 // c.    Grade System:
 // Design a grading system that takes a student's score as input and returns the corresponding grade using a switch case.
 const marks=88;
@@ -526,10 +518,64 @@ console.log("With the marks "+marks+", your grade is "+StudentGRade(ama));
 
 // d.    Traffic Light:
 // Simulate a traffic light using a switch case. The program should output the color of the traffic light based on user input (1 for red, 2 for yellow, and 3 for green).
-
+let userInput =1;
+switch (userInput){
+    case 1:
+        console.log("Red");break;
+    case 2:
+        console.log("Yellow");break;
+    case 3:
+        console.log("Green");break;
+    default:
+        confirm("Invalid input!");
+}
 // e.    Month Name:
 // Write a program that takes a number (1-12) representing a month and outputs the name of the month using a switch case.
-
+const month=11;
+const monthsOfTheWeek=(a)=>{
+  switch (a){
+    case 1:
+      console.log("January");
+      break;
+    case 2:
+      console.log("February");
+      break;
+    case 3:
+      console.log("March");
+      break;
+    case 4:
+      console.log("April");
+      break;
+    case 5:
+      console.log("May");
+    break;
+    case 6:
+      console.log("June");
+      break;
+    case 7:
+      console.log("July");
+      break;
+      case 8:
+      console.log("August");
+      break;
+      case 9:
+      console.log("September");
+      break;
+      case 10:
+      console.log("October");
+      break;
+      case 11:
+      console.log("November");
+      break;
+      case 12:
+      console.log("Decedmber");
+      break;
+    default:
+    console.log("Invalid inout");
+  }
+  
+}
+monthsOfTheWeek(month);
 // f.    Simple Menu:
 // Implement a simple menu system using a switch case. The menu should have options for different operations, and the program should execute the selected operation.
 
@@ -570,50 +616,56 @@ console.log("With the marks "+marks+", your grade is "+StudentGRade(ama));
 // 67.    Loops on Objects:
 // a.    Object Properties:
 // Write a program to print all the properties of an object.
-// function objectfunction(){
-//   const objExam=[
-//     {
-//       name:'Alice Umuhozawase',
-//       age: 20,
-//       session: 'BACKEND',
-//       opt: 'Debate'
-//     },
-//     {
-//       name: 'Sandrine Irakoze',
-//       age: 25,
-//       session: 'BACKEND',
-//       opt: 'UI project'
-//     },
-//     {
-//       name:'Esperance Uwicyeza',
-//       age: 22,
-//       session: 'FRONTEND',
-//       opt: 'Bckend project'
-//     },
-//     {
-//       name:'Queen Umuvandimwe',
-//       age: 19,
-//       session: 'BACKEND',
-//       opt: 'Debate'
-//     },
-//     {
-//       name:'Charity Ikirezi',
-//       age: 23,
-//       session: 'FRONTEND',
-//       opt: 'Essay writing'
-//     },
-//     {
-//       name:'Rosine Uwumukiza',
-//       age: 31,
-//       session: 'FRONTEND',
-//       opt: 'Essay writing'
-//     }
-//   ]
-// }
-
-// // b.    Object Values:
-// // Create a function that prints all the values of an object.
-
+function objectfunction(){
+  const objExam=[
+    {
+      name:'Alice Umuhozawase',
+      age: 20,
+      session: 'BACKEND',
+      opt: 'Debate'
+    },
+    {
+      name: 'Sandrine Irakoze',
+      age: 25,
+      session: 'BACKEND',
+      opt: 'UI project'
+    },
+    {
+      name:'Esperance Uwicyeza',
+      age: 22,
+      session: 'FRONTEND',
+      opt: 'Bckend project'
+    },
+    {
+      name:'Queen Umuvandimwe',
+      age: 19,
+      session: 'BACKEND',
+      opt: 'Debate'
+    },
+    {
+      name:'Charity Ikirezi',
+      age: 23,
+      session: 'FRONTEND',
+      opt: 'Essay writing'
+    },
+    {
+      name:'Rosine Uwumukiza',
+      age: 31,
+      session: 'FRONTEND',
+      opt: 'Essay writing'
+    }
+  ]
+  return objExam; 
+}
+console.log(objectfunction());
+// b.    Object Values:
+// Create a function that prints all the values of an object.
+function objectFunctiony(a){
+    for (key in a.objExam){
+        console.log(key+": "+objExam[key]);
+    }
+}
+objectFunctiony(objectfunction);
 // function displayFunction(){
 //   let a=objectfunction.objExam.length;
 //   console.log(a);
